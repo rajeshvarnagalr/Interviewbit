@@ -74,9 +74,3 @@ while (sum(error)) != 0:
     
 print(C)
 
-# for saving output as text file Enter path of output text file
-output_path = str(input('Enter path of the output text file to save the cluster points-: '))
-with open(output_path,"w") as f:
-    f.write("\n".join(" ".join(map(str, x)) for x in C))
-
-Exit = input('Data saved in output file.\nPRESS ENTER TO EXIT')
